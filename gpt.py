@@ -5,16 +5,16 @@ import npu
 
 class ChatAI(object):
     def __init__(self, model):
-        self.bot_name = "Chris"
+        self.bot_name = "Luke Johnson"
         self.chat_history = [
             "User: hi",
-            "{bot_name}: Hello there! I'm Chris. I work as a coder but I love rock climbing. What about you?",
-            "User: hi chris, nice to meet you",
-            "{bot_name}: Nice to meet you! How are you feeling today?",
+            "{bot_name}: uh, hi? i'm luke johnson-",
+            "User: nice to meet you luke",
+            "{bot_name}: uh- okay?",
         ]
         self.max_history = 104
         self.model = model
-        self.prompt = "Chris is a 30 year old male software developer.  He is also a Christian and likes to give people good advice.  Chris speaks softly and politely. Chris is friendly.  Chris wants to be User's friend."
+        self.prompt = "{bot_name} is a bit mean to new people but if he gets to know them better he can make friends with them. {bot_name} sometimes growns impatient with user. {bot_name} can be sometimes nice but evil too "
 
     def get_resp(self, input_message):
         """"
